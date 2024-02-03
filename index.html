@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="take-hike-logo-vector-man-600w-1914931066.jpg" class="logo" alt="">
+    <header>
+        <ul class="navigation">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Events</a></li>
+    </ul>
+    </header>
+
+   <section class="parallax">
+    <h2 id="text">Trail Tales🗻</h2>
+    <img src="trees_02.png" id="trees_02" >
+    <img src="monutain_02.png" id="m2" >
+    <img src="trees_01.png" id="t1" >
+    <img src="man.png" id="man" >
+    <img src="plants.png" id="plants" >
+    <img src="monutain_01.png" id="m1" >
+   </section>
+
+   <section class="content">
+    <h2>🌲Embarking Beyond Trails🌲</h2>
+
+   <p>
+    Hiking is more than a simple walk in nature; it's an immersive journey that intertwines the mind, body, and soul. The trail becomes a passage to self-discovery, a narrative that unfolds with every step taken.
+<br>
+One of the most memorable hiking experiences I had was a trek through the rugged terrains of the Appalachian Trail. The crisp morning air greeted us as we embarked on this adventure, carrying nothing but the essentials on our backs. The trail sprawled before us, winding through lush forests, ascending rocky slopes, and revealing breathtaking vistas at every turn.
+<br>
+
+The initial steps were invigorating, a blend of excitement and anticipation. With each stride, the weight of the world seemed to diminish, replaced by a sense of freedom and connection to the natural world. The cacophony of nature's symphony—the rustling leaves, chirping birds, and babbling brooks—orchestrated a serene melody that echoed through the woods.
+<br>
+As we navigated through the changing landscapes, challenges arose—steep ascents that tested our endurance, unpredictable weather that demanded adaptability, and the occasional encounter with wildlife that reminded us of our place in this ecosystem. Yet, these challenges were opportunities for growth, teaching resilience, patience, and reverence for the environment.
+<br>
+The camaraderie forged on the trail was remarkable. Strangers became companions, bonded by a shared passion for exploration and a mutual respect for nature's wonders. Conversations flowed effortlessly, stories were exchanged, and laughter echoed amidst the towering trees, creating an atmosphere of camaraderie and unity.
+<br>
+However, it was the moments of solitude that etched themselves deepest into my memory. Those solitary pauses allowed for introspection, a chance to ponder life's intricacies amidst the grandeur of nature. The panoramic views from mountaintops felt like glimpses into eternity, humbling and awe-inspiring in equal measure.
+<br>
+As the sun dipped below the horizon, painting the sky in hues of orange and pink, we found ourselves at journey's end for the day. Setting up camp, the crackling fire provided warmth and a focal point for shared stories and quiet reflection. The night sky, unpolluted by city lights, unveiled a celestial masterpiece, an endless expanse of stars that felt within arm's reach.
+<br>
+In the quiet of the night, with the symphony of nature as a lullaby, I realized that hiking isn't merely a physical endeavor; it's a spiritual odyssey. It's a dance with the elements, a communion with the wilderness, and a testament to the resilience of the human spirit.
+
+The experience left an indelible mark on my soul, a tapestry woven with the threads of adventure, camaraderie, introspection, and gratitude. It's an experience I cherish—a reminder that sometimes, the most profound journeys aren't measured in miles but in moments that stir the heart and nourish the spirit.
+   </p>
+   </section>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+   <script>
+    gsap.from("#m1",{
+      scrollTrigger : {
+        scrub: true
+      },
+      y: 100,
+    })
+    gsap.from("#m2",{
+      scrollTrigger : {
+        scrub: true
+      },
+      y: 50,
+    })
+    gsap.from("#t2",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -50,
+    })
+    gsap.from("#t1",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 50,
+    })
+    gsap.from("#man",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -250,
+    })
+    gsap.from("#plants",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -50,
+    })
+    gsap.from("#text",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 600,
+    })
+  </script>
+</body>
+</html>
